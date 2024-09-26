@@ -24,19 +24,19 @@ const projectsData = [
   },
   {
     title: 'WorkSpace',
-    imageSM: 'workSpaceSM.png',
-    imageMD: 'workSpaceMD.png',
-    imageLG: 'workSpaceLG.png',
+    imageSM: 'workSpaceSM-414.png',
+    imageMD: 'workSpaceMD-688.png',
+    imageLG: 'workSpaceLG-959.png',
     repositoryUrl: 'https://github.com/douglasmf/WorkSpace',
-    liveUrl: 'https://work-space-eta.vercel.app/',
+    liveUrl: 'https://work-space-seven.vercel.app/',
     desc: 'o WorkSpace é um conjunto de ferramentas para auxiliar no trabalho, estudos ou dia a dia'
   },
 ];
 
-const Projects = (props) => {
+const Projects = () => {
   return (
-    <S.ProjectsContainer className={props.className}>
-        <TitleSection name='Projects' />
+    <S.ProjectsContainer>
+        <TitleSection name='Projetos' />
         <Carousel projects={projectsData}/>
     </S.ProjectsContainer>
   )

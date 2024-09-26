@@ -1,24 +1,19 @@
-import { useState } from 'react';
+import  useScroll from '../../../../hooks/useScroll.js'
 import * as S from './ButtonMenu.style';
 
-const ButtonMenu = () => {
-    const [openMenu, setOpenMenu] = useState(false);
+const ButtonMenu = ({ openMenu, toggleMenu }) => {
+  const isVisible = useScroll(0.9);
 
-    const handleOpen = () => {
-        setOpenMenu(!openMenu);
-    };
-
-    const toggleClass = () => {
-        return openMenu ? 'animationLinha' : '';
-    };
-
-    return (
-        <S.ButtonStyle onClick={handleOpen}>
-            <S.Linha className={toggleClass()} />
-            <S.Linha className={toggleClass()} />
-            <S.Linha className={toggleClass()} />
-        </S.ButtonStyle>
-    );
+  const toggleClass = () => {
+    return openMenu ? 'animationLinha' : '';
+  };
+  return (
+    <S.ButtonStyle onClick={toggleMenu} visible={isVisible}>
+      <S.Linha className={toggleClass()} />
+      <S.Linha className={toggleClass()} />
+      <S.Linha className={toggleClass()} />
+    </S.ButtonStyle>
+  );
 };
 
 export default ButtonMenu;

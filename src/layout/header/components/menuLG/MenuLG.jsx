@@ -7,16 +7,16 @@ import { FaUserCircle,FaCode,FaFolderOpen,FaEnvelope  } from 'react-icons/fa';
 const MenuLG = () => {
   return (
     <S.MenuStyle>
-      <LinkMenu title='About' target='about'>
+      <LinkMenu title='Sobre' target='about'>
         <FaUserCircle/>
       </LinkMenu>
-      <LinkMenu title='Skills' target='skills'>
+      <LinkMenu title='Habilidades' target='skills'>
         <FaCode/>
       </LinkMenu>
-      <LinkMenu title='Projects' target='projects'>
+      <LinkMenu title='Projetos' target='projects'>
         <FaFolderOpen/> 
       </LinkMenu>
-      <LinkMenu title='Contact' target='contact'>
+      <LinkMenu title='Contato' target='contact'>
       <FaEnvelope/>
       </LinkMenu>
     </S.MenuStyle>

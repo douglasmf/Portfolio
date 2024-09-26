@@ -3,21 +3,28 @@ import * as S from './About.style'
 import TitleSection from '../../../../components/TitleSection/TitleSection'
 import {FaGithub , FaLinkedin } from 'react-icons/fa'
 
-const About = (props) => {
+const About = () => {
   return (
-    <S.AboutContainer className={props.className}>
-      <TitleSection name='About' />
-      <S.AboutImage>
-        <img src="/perfil.jpg" alt="Douglas Monteiro" />
-        <h2>Douglas Monteiro</h2>
-        <h3>Desenvolvedor Front-End</h3>
-        <button>Donwload Curriculo</button>
-        <a href="#"><FaGithub id='github'/> Github</a>
-        <a href="#"><FaLinkedin id='linkedin'/> Linkedin</a>
-      </S.AboutImage>
-      <S.AboutText>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, dicta amet nulla aut, est minima totam impedit ut, voluptatibus saepe reiciendis iste ea. Quibusdam illum est eos exercitationem labore optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, temporibus placeat animi neque similique ullam earum at corrupti maxime qui ipsum consectetur illo nulla ipsam minus quae illum libero quos.</p>
-      </S.AboutText>
+    <S.AboutContainer >
+      <TitleSection name='Sobre mim' />
+      <S.AboutContain>
+        <S.AboutImage>
+          <S.AboutId>
+            <img src='perfil.png' alt="Douglas Monteiro" />
+            <h2>Douglas Monteiro</h2>
+            <h3>Desenvolvedor Front-End</h3>
+          </S.AboutId>
+          <a href="/curriculo.pdf" className="curriculo" target="_blank">Curriculo</a>
+          <div className="socialLinks">
+            <a href="#"><FaGithub id='github'/> Github</a>
+            <a href="#"><FaLinkedin id='linkedin'/> Linkedin</a>
+          </div>
+        </S.AboutImage>
+        <S.AboutText>
+          <p>Sou entusiasmado pelo desenvolvimento front-end e estou continuamente me dedicando ao aprendizado e prática das tecnologias que o compõem. Meu objetivo é aprimorar minhas habilidades e desenvolver soluções de uma forma rápida e eficiaente</p> <br/>
+          <p>Minhas principais habilidades envolvem HTML, CSS, JavaScript e React, e estou sempre aberto a explorar novas ferramentas e frameworks que possam agregar valor aos projetos. Atualmente, estou em busca de minha primeira oportunidade para aplicar e expandir meus conhecimentos.</p>
+        </S.AboutText>
+      </S.AboutContain>
     </S.AboutContainer>
   )
 }

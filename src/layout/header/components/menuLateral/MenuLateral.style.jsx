@@ -9,5 +9,12 @@ export const MenuContainer = styled.nav`
     display: flex;
     flex-direction: column;
     gap: 4vh;
+    z-index: 999;
+    @media (max-width: 999px){
+        left: ${({ isVisible }) => (isVisible ? '4vw' : '-100vw')};
+    }
+    @media (max-width: 769px){
+        display: none;
+    }
 `;
 

@@ -4,10 +4,10 @@ import TitleSection from '../../../../components/TitleSection/TitleSection'
 import FormContato from '../../../../components/FormContato/FormContato'
 import SocialContato from '../../../../components/SocialContato/SocialContato'
 
-const Contact = (props) => {
+const Contact = () => {
   return (
-    <S.ContactContainer className={props.className}>
-      <TitleSection name='Contact' />
+    <S.ContactContainer>
+      <TitleSection name='Contato' />
       <S.ContactsContain>
         <FormContato/>
         <SocialContato/>

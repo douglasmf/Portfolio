@@ -45,8 +45,15 @@ export const ButtonPrev = styled.button`
   padding: .5rem;
   border-radius: 50%;
   transition: .5s;
+  cursor: pointer;
   &:hover{
     background-color: ${LightTheme.colors.primaryColor};
+  }
+  @media (max-width: 500px){
+    height: auto;
+    width: auto;
+    font-size: 2rem;
+    padding: .4rem .9rem;
   }
 `;
 
@@ -65,8 +72,15 @@ export const ButtonNext = styled.button`
   background-color: ${LightTheme.colors.backColor};
   border-radius: 50%;
   transition: .5s;
+  cursor: pointer;
   &:hover{
     background-color: ${LightTheme.colors.primaryColor};
+  }
+  @media (max-width: 500px){
+    height: auto;
+    width: auto;
+    font-size: 2rem;
+    padding: .4rem .9rem;
   }
 `;
 
@@ -75,13 +89,12 @@ export const ProjectInfo = styled.div`
   position: absolute;
   left: 0;
   bottom: 0;
+  width: 100%;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  width: 100%;
-  height: 24%;
-  padding: 1rem;
+  gap: 1rem;
   font-size: 1.2em;
   background-color: #0d3e51e1;
   color: #ffffff;
@@ -91,7 +104,6 @@ export const ProjectInfo = styled.div`
     color: #fff;
   }
   @media (max-width: 500px){
-    height: 35%;
     h1{
       font-size: 1.1em;
     }
@@ -109,6 +121,7 @@ a{
   border: 1px solid #ffffff;
   border-radius: 6px;
   background-color: #16161600;
+  font-size: 0.8rem;
   font-weight: bold;
   color: #ffffff;
   transition: .5s;
@@ -119,7 +132,6 @@ a:hover{
 @media (max-width: 500px){
   a{
     padding: .4rem .5rem;
-    font-size: .9em;
   }
   
 }

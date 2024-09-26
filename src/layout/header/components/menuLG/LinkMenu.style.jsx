@@ -34,4 +34,11 @@ export const LinkStyle = styled(Link)`
       font-size: 2.7rem;
     }
   }
+  @media (max-width: 599px) {
+    font-size: .7rem;
+    height: 15vh;
+    svg {
+      font-size: 2rem;
+    }
+  }
 `;

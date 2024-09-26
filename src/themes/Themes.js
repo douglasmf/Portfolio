@@ -5,6 +5,6 @@ export const LightTheme = {
         black50: "#f8f8f8",
         black100: "#ddd",
         black700: "#252525",
-        textColor: "#333"
+        black800: "#333"
     },
 }

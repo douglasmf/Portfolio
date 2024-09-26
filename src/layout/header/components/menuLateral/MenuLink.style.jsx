@@ -9,7 +9,7 @@ export const LinkContainer = styled(Link)`
     gap: 1vh;
     font-size: 1.2rem;
     font-weight: bold;
-    color: ${LightTheme.colors.black700};
+    color: #fff;
     cursor: pointer;
     transform: ${({ isVisible }) => (isVisible ? 'translateX(0)' : 'translateX(-300%)')};
     transition: transform .7s ease;
@@ -20,11 +20,19 @@ export const LinkContainer = styled(Link)`
         background-color: ${LightTheme.colors.primaryColor};
         padding: 1rem;
         border-radius: 50%;
-        transition: .5s;
+        transition: .8s;
     }
     &:hover {
         svg {
-            background-color: ${LightTheme.colors.backColor};
+            background-color: #fff;
+            color: ${LightTheme.colors.primaryColor};
+        }
+    }
+    @media (max-width: 999px){
+        font-size: 1rem;
+        svg{
+            font-size: 3rem;
+            padding: .5rem;
         }
     }
 `;

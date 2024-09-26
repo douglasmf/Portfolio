@@ -7,10 +7,9 @@ const MenuSmLink = (props) => {
     to={props.target}
     smooth={true}
     duration={500} 
-    className="cursor-pointer">
+    className={props.class}>
     {props.children}
     {props.title}
-
     </S.LinkStyle>
   )
 }

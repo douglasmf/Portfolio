@@ -1,7 +1,9 @@
 import React from 'react'
 import * as S from './MenuLink.style'
+import useMedia from '../../../../hooks/useMedia'
 
 const MenuLink = (props) => {
+  const visible = useMedia('(min-width: 1000px)');
   return (
     <S.LinkContainer
         to={props.target}
@@ -10,7 +12,7 @@ const MenuLink = (props) => {
         isVisible={props.isVisible} 
         className="cursor-pointer">
         {props.children}
-        {props.title}
+        {visible && props.title}
     </S.LinkContainer>
   )
 }
