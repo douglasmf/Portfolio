@@ -4,4 +4,4 @@ No meu Portfólio é encontrado minhas informações de contato, minhas habilida
 
 Site no ar: https://portfolio-douglas-six.vercel.app/
 
-![portfolio](https://portfolio-douglas-six.vercel.app/img/screenshots/portfolioLG.png)
+![portfolio](https://portfolio-douglas-six.vercel.app/img/screenshots/portfolioLG)
