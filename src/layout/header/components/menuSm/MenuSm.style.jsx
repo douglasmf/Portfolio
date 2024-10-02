@@ -6,7 +6,7 @@ export const MenuStyle = styled.nav`
   background-color: ${LightTheme.colors.black800};
   top: calc(3% + 50px);
   left: 4%;
-  padding: 4% 3%;
+  padding: 4%;
   opacity: ${(props) => props.visible? 1 : 0};
   display: 'flex';
   flex-direction: column;

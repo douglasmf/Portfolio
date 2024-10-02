@@ -9,7 +9,7 @@ export const LinkStyle = styled(Link)`
   margin-bottom: 15%;
   font-size: 1.1rem;
   cursor: pointer;
-  &:nth-of-type(4){
+  &:nth-of-type(5){
     margin-bottom: 0;
   }
   svg{

@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <Element name='header'>
       <S.HeaderStyle>
-        <img src={telaSmall? '/perfil.png' : '/perfil_lado_modificado.png'} alt='Douglas Monteiro'/>
+        <img src={telaSmall? '/perfil.png' : '/perfil_lado.png'} alt='Douglas Monteiro'/>
         <S.PerfilName>
           <h1>Douglas Monteiro</h1>
           <p>Desenvolvedor Front-End</p>
