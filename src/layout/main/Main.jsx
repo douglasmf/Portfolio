@@ -4,7 +4,7 @@ import useScroll from '../../hooks/useScroll.js';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Projects from './components/Projects/Projects';
-import Skills2 from './components/Skills/Skills2';
+import Skills from './components/Skills/Skills';
 import { MainContainer, ReturnTop } from './Main.style';
 import { TiArrowSortedUp } from "react-icons/ti";
 
@@ -29,7 +29,7 @@ const Main = () => {
         <About/>
       </Element>
       <Element name='skills' className='sectionContainer'>
-        <Skills2/>
+        <Skills/>
       </Element>
       <Element name='projects' className='sectionContainer'>
         <Projects/>
